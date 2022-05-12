@@ -1,0 +1,66 @@
+Welcome to Git (version 1.8.4-preview20130916)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$ git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       Calculadora.java
+nothing added to commit but untracked files present (use "git add" to track)
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$ git status-s
+git: 'status-s' is not a git command. See 'git --help'.
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$ git status -s
+?? Calculadora.java
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$ git add Calculadora.java
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$ git status -s
+A  Calculadora.java
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$ git commit -m "marco calculadora 1"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'AmazonMovil@LAPTOP-GAPIPEV3.(none)')
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$ git config --global user.name "YagoQueHago"
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$ git config --global user.email "yurrutiavila@gmail.com"
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$ git commit -m "marco calculadora 1"
+[master (root-commit) 427f7ac] marco calculadora 1
+ 1 file changed, 54 insertions(+)
+ create mode 100644 Calculadora.java
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$ git status -s
+
+AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+$
+
