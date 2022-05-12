@@ -1,38 +1,73 @@
-Welcome to Git (version 1.8.4-preview20130916)
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora
+$ git init
+Initialized empty Git repository in C:/Users/jurru/Documents/EclipseProjects/workspace/Calculadora/.git/
 
-
-Run 'git help git' to display the help index.
-Run 'git help <command>' to display help for specific commands.
-
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
 $ git status
-# On branch master
-#
-# Initial commit
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#       Calculadora.java
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .classpath
+        .project
+        .settings/
+        bin/
+        src/
+
 nothing added to commit but untracked files present (use "git add" to track)
 
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
-$ git status-s
-git: 'status-s' is not a git command. See 'git --help'.
-
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
 $ git status -s
-?? Calculadora.java
+?? .classpath
+?? .project
+?? .settings/
+?? bin/
+?? src/
 
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
-$ git add Calculadora.java
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$ git add src/
 
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
 $ git status -s
-A  Calculadora.java
+A  src/git/Calculadora.java
+A  src/notas/Git1
+A  src/notas/Git2
+?? .classpath
+?? .project
+?? .settings/
+?? bin/
 
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
-$ git commit -m "marco calculadora 1"
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$ git add .classpath
+
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$ git add .project
+
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$ git add .settings/
+
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$ git add bin/
+
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$ git status -s
+A  .classpath
+A  .project
+A  .settings/org.eclipse.jdt.core.prefs
+A  bin/git/Calculadora.class
+A  bin/git/LaminaCalculadora.class
+A  bin/git/MarcoCalculadora.class
+A  bin/notas/Git1
+A  bin/notas/Git2
+A  src/git/Calculadora.java
+A  src/notas/Git1
+A  src/notas/Git2
+
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$ git commit -m "comienzo del proyecto"
+Author identity unknown
 
 *** Please tell me who you are.
 
@@ -44,23 +79,36 @@ Run
 to set your account's default identity.
 Omit --global to set the identity only in this repository.
 
-fatal: unable to auto-detect email address (got 'AmazonMovil@LAPTOP-GAPIPEV3.(none)')
+fatal: unable to auto-detect email address (got 'jurru@ACER-AMD-A9.(none)')
 
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
-$ git config --global user.name "YagoQueHago"
-
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
 $ git config --global user.email "yurrutiavila@gmail.com"
 
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
-$ git commit -m "marco calculadora 1"
-[master (root-commit) 427f7ac] marco calculadora 1
- 1 file changed, 54 insertions(+)
- create mode 100644 Calculadora.java
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$ git config --global user.name "YagoQueHago"
 
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$ git commit -m "Comienzo del proyecto"
+[master (root-commit) 2de8614] Comienzo del proyecto
+ 11 files changed, 372 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 bin/git/Calculadora.class
+ create mode 100644 bin/git/LaminaCalculadora.class
+ create mode 100644 bin/git/MarcoCalculadora.class
+ create mode 100644 bin/notas/Git1
+ create mode 100644 bin/notas/Git2
+ create mode 100644 src/git/Calculadora.java
+ create mode 100644 src/notas/Git1
+ create mode 100644 src/notas/Git2
+
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
 $ git status -s
 
-AmazonMovil@LAPTOP-GAPIPEV3 /C/Users/AmazonMovil/Documents/EclipseProjects/workspace/Calculadora/src/git (master)
-$
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$ git log --oneline
+2de8614 (HEAD -> master) Comienzo del proyecto
 
+jurru@ACER-AMD-A9 MINGW64 ~/Documents/EclipseProjects/workspace/Calculadora (master)
+$
