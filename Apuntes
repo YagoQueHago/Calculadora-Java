@@ -1,0 +1,25 @@
+/***************************** COMANDOS ***********************************/
+
+$git reset --hard (numero respaldo) ; Restauramos la copia de respaldo
+
+$git add . ; Agregamos al area de ensayo todos los archivos del proyecto
+
+$git commit -am "descripción" ; Agregamos al area de ensayo y "commit" a la vez
+
+/****************************** CONSOLA VIM ************************************/
+
+$ git commit --amend
+
+1º/ :i PARA MODIFICAR DESCRIPCIÓN (aparece en la parte inferior de la consola)
+
+2º/ presionamos cualquier tecla para que aparezca el cursor, suprimimos y...
+
+3º/ salimos del modo edición con ESC
+
+4º/ volvemos a escribir 
+
+5º/ pulsamos Enter y Esc
+
+6º/ escribimos el comando "wq" para salir y guardar cambios
+
+/********************************************************************************/
