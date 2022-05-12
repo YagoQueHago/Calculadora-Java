@@ -1,1 +1,3 @@
-$git reset --hard (numero respaldo)
+$git reset --hard (numero respaldo) - Restauramos la copia de respaldo
+
+$git add . - Agregamos al area de ensayo todos los archivos del proyecto
