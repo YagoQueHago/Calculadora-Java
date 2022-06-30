@@ -16,7 +16,7 @@ $git init ; iniciamos el proyecto. El programa crea una carpeta OCULTA con el no
 
 $git add + nombre archivo ; Realiza seguimiento archivo. El archivo pasa del directorio de trabajo al área de ensayo
 
-$git add . ; Agregamos al area de ensayo todos los archivos del proyecto
+$git add . ; Agregamos al area de ensayo todos los archivos del proyecto ("$git add 'espacio/punto').
 
 $git status -s ; Nos indica el estado de nuestros archivos:
 
