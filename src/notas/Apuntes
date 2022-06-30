@@ -1,3 +1,52 @@
-$git reset --hard (numero respaldo) - Restauramos la copia de respaldo
+/******************* DIRECTORIOS DE TRABAJO ********************************/
 
-$git add . - Agregamos al area de ensayo todos los archivos del proyecto
+1/ Directorio de trabajo
+
+2/ Área de ensayo (staging area)
+
+3/ Repositorio local
+
+/****************************************************************************/
+
+Boton derecho sobre la carpeta del proyecto y pulsamos la opción "Git Bash here"
+
+/***************************** COMANDOS ***********************************/
+
+
+$git init ; iniciamos el proyecto. El programa crea una carpeta OCULTA con el nombre git. (vista/mostrar elementos ocultos)
+
+$git add + nombre archivo ; Realiza seguimiento archivo. El archivo pasa del directorio de trabajo al área de ensayo
+
+$git add . ; Agregamos al area de ensayo todos los archivos del proyecto
+
+$git status -s ; Nos indica el estado de nuestros archivos:
+
+	?? = Indica que no se está haciendo seguimiento del archivo
+	
+	A (verde) = Indica que el archivo está en el "staging area"
+	
+$git commit ; Copia de respaldo o instantanea del proyecto. La primera vez nos pedirá un correo electrónico.
+
+$git commit -m + "descripición" ;  Agregamos archivo al repositorio local con una descripción.
+	
+$git commit -am "descripción" ; Agregamos al area de ensayo y repositorio local en un solo paso.
+
+$git reset --hard (numero respaldo) ; Restauramos la copia de respaldo.
+
+/****************************** CONSOLA VIM ************************************/
+
+$ git commit --amend
+
+1º/ :i PARA MODIFICAR DESCRIPCIÓN (aparece en la parte inferior de la consola)
+
+2º/ presionamos cualquier tecla para que aparezca el cursor, suprimimos y...
+
+3º/ salimos del modo edición con ESC
+
+4º/ volvemos a escribir 
+
+5º/ pulsamos Enter y Esc
+
+6º/ escribimos el comando "wq" para salir y guardar cambios
+
+/********************************************************************************/
