@@ -28,6 +28,8 @@ $git status -s ; Nos indica el estado de nuestros archivos:
 	
 	M (verde) = Indica que el archivo modificado está en el "staging area".
 	
+	MM (verde y rojo) = Indica que el archivo modificado en el "staging area" ha sido modificado.
+	
 $git commit ; Copia de respaldo o instantanea del proyecto. Ojo:
 
 	NOTA:
@@ -52,9 +54,10 @@ $git commit -am "descripción" ; Agregamos al area de ensayo y repositorio local 
 	NOTA:
 	
 		Siempre que modificamos un archivo, debemos subirlo al área de ensayo y luego al repositorio local
-		
 
-$git reset --hard (numero respaldo) ; Restauramos la copia de respaldo.
+$git log --oneline ; Muestra todas las copias de respaldo, con su código, que tengo en el repositorio de Git (todos los "commit").	
+
+$git reset --hard (código respaldo) ; Restauramos la copia de respaldo.
 
 /****************************** CONSOLA VIM ************************************/
 
